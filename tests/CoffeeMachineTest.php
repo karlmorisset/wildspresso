@@ -28,11 +28,10 @@ class CoffeeMachineTest extends TestCase{
     {
         $this->coffee->initMachine(["waterLoad" => 50, "lightColor"=>"white"]);
 
-        $this->assertEquals(15, $this->coffee->flowDuration);
+        $this->assertEquals(45, $this->coffee->appuiCourt());
 
         $this->assertEquals(30, $this->coffee->appuiLong(30));
 
-        $this->assertEquals(30, $this->coffee->flowDuration);
         $this->assertEquals(90, $this->coffee->appuiCourt());
     }
 
